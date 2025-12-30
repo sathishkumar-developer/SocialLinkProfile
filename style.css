@@ -1,0 +1,90 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Grey-900);
+    padding: 3rem;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--Grey-800);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile-name {
+    color: var(--White);
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+.profile-location {
+    color: var(--Green);
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    text-align: center;
+}
+
+.profile-desc {
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    color: var(--White);
+    padding: 1rem;
+}
+
+.socialMedia-container {
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.socialMedia-container p {
+    padding: 1rem;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.socialMedia-container p:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
